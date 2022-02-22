@@ -4,7 +4,6 @@
 # second input should be the result from regsubsets
 
 BestSubsets = function(y, regout){
-  y_var <- noquote(y)
   summary_reg <- summary(all)
   
   #find the best variables based on best r-squared 
