@@ -1,6 +1,5 @@
-#function to show a linear model based on the best regsubsets variable. 
-#Note: Make sure first input variable in the function is in quotes.
-#For Example: LinearModelBestSubsets("Price", regout)
+# function to show a linear model based on the best regsubsets variable. 
+# Note: Make sure first input variable in the function is in quotes. For Example: BestSubsets("Price", regout)
 # second input should be the result from regsubsets
 
 BestSubsets = function(y, regout){
