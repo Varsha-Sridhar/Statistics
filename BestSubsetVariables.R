@@ -4,7 +4,7 @@
 BestSubsetVariables = function(regout){
   summary_reg <- summary(regout)
   
-  #find the best variables based on lowest Mallow's CP 
+  #find the best variables based on lowest Mallows' CP 
   truevariables = data.frame(summary_reg$which[which.min(summary_reg$cp),][summary_reg$which[which.min(summary_reg$cp),] == TRUE])
   
   #find row that gives intercept and remove it from the list 
