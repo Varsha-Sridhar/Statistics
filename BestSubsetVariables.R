@@ -1,4 +1,4 @@
-#function to show best subset variables based on the best regsubsets variable. 
+#function to show list of best variables based on regsubsets() 
 #input should be the result from regsubsets()
 
 BestSubsetVariables = function(regout){
