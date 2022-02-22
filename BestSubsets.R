@@ -19,7 +19,7 @@ BestSubsets = function(y, regout){
   model <- noquote(paste(
     y, 
     "~", 
-    paste(variables, collapse = " + ")))
+    paste(noquote(rownames(truevariables)), collapse = "+")))
   
   return(model) 
 }
